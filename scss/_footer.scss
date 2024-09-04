@@ -1,0 +1,31 @@
+#footer {
+  margin-top: 2.5rem;
+  background-color: $light-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .footer-right {
+    text-align: center;
+    margin-right: 1rem;
+  }
+
+  .footer-left {
+    margin-left: 1rem;
+    .footer-items {
+      display: flex;
+
+      align-items: center;
+
+      .icon {
+        font-size: 2rem;
+
+        background-color: none;
+
+        color: $black-color;
+
+        margin: 1rem;
+      }
+    }
+  }
+}

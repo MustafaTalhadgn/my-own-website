@@ -1,0 +1,128 @@
+#home {
+  &__myself {
+    margin-top: 2.5rem;
+    .title-animation {
+      @extend %title-animation;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      word-spacing: 2px;
+      font-weight: bold;
+      padding: 1rem;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+      -webkit-box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+      -moz-box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+    }
+
+    .skills {
+      margin-top: 2.5rem;
+      .skills__items {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        .skills_item {
+          margin: 5px;
+          background-color: $light-color;
+          padding: 1rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+  &__profile {
+    .title-animation {
+      @extend %title-animation;
+    }
+    .profile-text {
+      font-size: 1.2rem;
+      word-spacing: 2px;
+      font-weight: bold;
+      padding: 1rem;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+      -webkit-box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+      -moz-box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+    }
+
+    .profile-information {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 2.5rem;
+
+      .infrmtn {
+        font-weight: 600;
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+        &:nth-child(even) {
+          background-color: rgb(237, 227, 215);
+        }
+        .title {
+          font-size: 1.3rem;
+        }
+        .number {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  &__media {
+    .title-animation {
+      @extend %title-animation;
+    }
+    .lead-text .lead {
+      font-size: 1.2rem;
+      word-spacing: 2px;
+      font-weight: bold;
+      padding: 1rem;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+      -webkit-box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+      -moz-box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.83);
+    }
+    .social {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: $light-color;
+        margin: 0.5rem;
+        background-color: rgb(237, 227, 215);
+        border-radius: 1rem;
+        height: 8rem;
+
+        .icon {
+          font-size: 35px;
+          background-color: none;
+          color: black;
+        }
+
+        img {
+          width: 30px !important;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@keyframes title {
+  0% {
+    scale: (1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,85 @@
+#about {
+  &__text {
+    .text {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    .about-bottom {
+      display: flex;
+      .about-img {
+        width: 30%;
+        img {
+          background-color: $light-color;
+          padding: 1rem;
+          height: 250px;
+          width: 284px;
+          border-radius: 1rem;
+        }
+      }
+
+      .about-me {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: 0 1.5rem;
+        background-color: $light-color;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &__what {
+    color: $white-color;
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+    .border-bottom {
+      background-color: $medium-color;
+      width: 550px;
+    }
+    .skill {
+      .skill-bar {
+        border-radius: 15px;
+        background-color: $medium-color;
+      }
+      .bar {
+        border-radius: 15px;
+        height: 1rem;
+        background-color: $primary-color;
+      }
+    }
+  }
+  &__adverd {
+    background-color: $light-color;
+    margin-bottom: 2.5rem;
+    .adverd-logo {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__referances {
+    .referances {
+      .text {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: $light-color;
+        border-radius: 25px;
+      }
+      .referance-comment {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
