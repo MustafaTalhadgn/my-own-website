@@ -13,6 +13,7 @@
         height: 70px;
         width: 70px;
         padding: 1rem;
+        color: white;
       }
       &__items {
         display: flex;
@@ -24,6 +25,7 @@
           border-bottom: 3px transparent solid;
           padding-bottom: 0.5rem;
           transition: border-color 0.5s;
+          font-weight: 600;
           &:hover {
             border-color: $medium-color;
           }
@@ -34,11 +36,16 @@
         }
       }
     }
+    .header-content {
+      display: grid;
+      justify-content: end;
+      color: white;
+    }
   }
   &__about {
-    background: $bg-image no-repeat 40% 20% / cover;
+    background-color: $medium-color;
     height: 5.5rem;
-    color: $white-color;
+    color: $black-color;
     font-weight: 600;
     .main-nav {
       display: flex;
@@ -54,7 +61,7 @@
         display: flex;
 
         a {
-          color: $white-color;
+          color: $black-color;
           padding: 0 1rem;
           text-transform: uppercase;
           border-bottom: 3px transparent solid;

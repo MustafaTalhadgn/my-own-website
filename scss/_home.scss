@@ -1,9 +1,6 @@
 #home {
   &__myself {
     margin-top: 2.5rem;
-    .title-animation {
-      @extend %title-animation;
-    }
 
     .lead {
       font-size: 1.2rem;
@@ -28,14 +25,16 @@
           background-color: $light-color;
           padding: 1rem;
           margin-bottom: 2.5rem;
+
+          .fa-brands,
+          .fa-solid {
+            font-size: 4rem;
+          }
         }
       }
     }
   }
   &__profile {
-    .title-animation {
-      @extend %title-animation;
-    }
     .profile-text {
       font-size: 1.2rem;
       word-spacing: 2px;
@@ -71,9 +70,6 @@
     }
   }
   &__media {
-    .title-animation {
-      @extend %title-animation;
-    }
     .lead-text .lead {
       font-size: 1.2rem;
       word-spacing: 2px;
@@ -111,18 +107,5 @@
         }
       }
     }
-  }
-}
-@keyframes title {
-  0% {
-    scale: (1);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }

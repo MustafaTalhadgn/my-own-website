@@ -1,0 +1,87 @@
+#contact {
+  &__form {
+    .form_login {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      grid-template-areas:
+        "name email"
+        "tell subject"
+        "text  text"
+        "btn btn";
+    }
+    .name {
+      grid-area: name;
+    }
+    .email {
+      grid-area: email;
+    }
+    .subject {
+      grid-area: subject;
+    }
+    .text {
+      grid-area: text;
+    }
+    .dark-btn {
+      grid-area: btn;
+    }
+    .email {
+      grid-area: email;
+    }
+    .form {
+      padding: 1rem;
+
+      &::placeholder {
+        text-align: center;
+        font-weight: 600;
+        color: $dark-color;
+      }
+      &.text {
+        height: 200px;
+      }
+    }
+    .btn {
+      padding: 1rem;
+      background-color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-color;
+        border: 1px solid $white-color;
+        color: #fff;
+      }
+    }
+  }
+  &__info {
+    .border-bottom {
+      background-color: #fff;
+    }
+    .communication {
+      padding: 2rem;
+      color: #fff;
+      display: grid;
+      text-align: center;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
+    }
+    .section-title {
+      color: #fff;
+      padding: 1rem;
+    }
+    .email,
+    .phone,
+    .adress {
+      .fa-solid {
+        font-size: 1.3rem;
+        margin: 0.5 1rem;
+      }
+      a {
+        color: #fff;
+        list-style: none;
+      }
+    }
+  }
+}

@@ -15,18 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
-    />
+   
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -46,19 +36,58 @@
     </header>
 
     <!-- section -->
-    <section id="projects" class="text-center">
+    <section id="projects__items" class="text-center">
         <div class="container">
             <h2 class="section-title"> My Projects</h2>
             <div class="border-bottom"></div>
         <div class="projects-items ">
-            <div class="project">
-                <div class="project-image">
-                    <img src="./img/work-1.jpeg" alt="">
-                </div>
-                <div class="project-title"><h4>Javasctipt</h4></div>
-                <div class="project-text"><p>Lorem ipsum dolor sit amet.</p></div>
-            </div>
+        <div class="project">
+                      <div class="project-image">
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 125036.png" data-lightbox="proje1" data-title="TO DO" data-alt="görev"><img src="./img/proje1/Ekran görüntüsü 2024-06-27 125812.png" alt=""></a>
 
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 125259.png" data-lightbox="proje1">
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 125354.png" data-lightbox="proje1">
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 125436.png" data-lightbox="proje1">
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 125812.png" data-lightbox="proje1">
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 150619.png" data-lightbox="proje1">
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 150905.png" data-lightbox="proje1">
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 151214.png" data-lightbox="proje1"></a>
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 151423.png" data-lightbox="proje1"></a>
+                        </a>
+                       
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 151619.png" data-lightbox="proje1"></a>
+                        </a>
+                        <a href="img/proje1/Ekran görüntüsü 2024-06-27 151655.png" data-lightbox="proje1"></a>
+                      </a>
+      
+                      </div>
+                      <div class="project-title"><h4>Javasctipt</h4></div>
+                      <div class="project-text"><p>Lorem ipsum dolor sit amet.</p></div>
+         </div>
+         <div class="project">
+          <div class="project-image">
+            <a href="img/work-1.jpeg" data-lightbox="proje2" data-title="Currency" data-alt="görev"><img src="./img/work-1.jpeg" alt=""></a>
+    
+          </div>
+          <div class="project-title"><h4>REACT</h4></div>
+          <div class="project-text"><p>Lorem ipsum dolor sit amet.</p></div>
+</div>
+<div class="project">
+  <div class="project-image">
+    <a href="img/work-2.jpeg" data-lightbox="proje3" data-title="English Words Quiz" data-alt="görev"><img src="./img/work-2.jpeg" alt=""></a>
+
+  </div>
+  <div class="project-title"><h4>Javasctipt</h4></div>
+  <div class="project-text"><p>Lorem ipsum dolor sit amet.</p></div>
+</div>
+        
         </div>
         </div>
 
@@ -87,7 +116,21 @@
         <p>@2024/ 2025</p>
         <p>Bu Sitenın Tüm Hakları Saklıdır</p>
       </div>
-    </footer>
+    </footer> 
     <script src="js/jquery.min.js"></script>
+    <script src="./js/lightbox.js"></script>
+
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'disableScrolling':true,
+      'fitImagesInViewport':true,
+      'maxWidth': 1000,
+      'maxHeight':1000
+    } ) 
+</script>
+    
+
   </body>
 </html>

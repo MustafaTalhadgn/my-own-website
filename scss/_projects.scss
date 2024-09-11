@@ -21,7 +21,7 @@
           top: 0;
           right: 0;
           opacity: 0.7;
-          transform: translateX(-200px) translateY(-250px) rotate(45deg);
+          transform: translateX(-320px) translateY(-40px) rotate(45deg);
 
           overflow: visible;
           width: 100%;
@@ -30,6 +30,12 @@
         }
         &:hover::after {
           transform: translateX(-120px) translateY(-150px);
+        }
+        .project-image {
+          img {
+            height: 297.82px;
+            width: 374.4px;
+          }
         }
       }
     }
